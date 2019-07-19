@@ -35,6 +35,4 @@ Additions Made:
  * Start Page image added
  * header h1 color changed and text-shadow
  * header h3 color changed
- * Start Button color change
- * Start Button style changes: transition and :hover changes
 ```
