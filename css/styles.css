@@ -1,4 +1,4 @@
-/* ===================================== 
+/* =====================================
    Public API Request
 ======================================== */
 
@@ -14,19 +14,19 @@ html, body {
 }
 
 body {
-    font-family: "Nunito", sans-serif; 
+    font-family: "Nunito", sans-serif;
     text-align: center;
     background-image: linear-gradient(rgb(255, 255, 255), transparent 50%),
     linear-gradient(0deg,#fff, transparent 30%), url('../images/arno-smit-keynTanTG_4-unsplash.jpg');
     background-repeat: no-repeat;
- 
+
     /*background-blend-mode: lighten;
     box-shadow: 0 15px 15px 20px -120px rgba(19, 9, 9, 0.8);*/
      /*background: rgba(235, 33, 33, 0.246); url(../ arno-smit-keynTanTG_4-unsplash.jpg);
        background-size: 750px;
     padding-bottom: 350px;
     */
-   
+
 }
 
 header {
@@ -86,7 +86,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Gallery
 ======================================== */
 
@@ -99,7 +99,7 @@ header h1 {
     max-width: 1200px;
     margin: auto;
 }
-  
+
 .card {
     display: flex;
     flex-direction: row;
@@ -143,7 +143,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Modal
 ======================================== */
 
@@ -185,18 +185,18 @@ header h1 {
     width: 150px;
     margin-top: 35px;
     border-radius: 50%;
-    
+
 }
 
 .modal-name {
     margin-bottom: 5px;
     font-size: 1.5em;
-    font-family: serif; 
+    font-family: serif;
     color: rgba(80, 7, 7, 0.7);
 }
 
 .modal-text {
-    font-family: serif; 
+    font-family: serif;
     font-size: 1.2em;
     color: rgba(29, 4, 4, 0.7);
     margin: 10px;
@@ -235,16 +235,16 @@ header h1 {
     padding: 0.75em 1.5em;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 0.35em;
-    transition: .4s ease-out;
+    transition: .7s ease-out;
     outline: none;
   }
-  
 
-/* ===================================== 
+
+/* =====================================
    Media Queries
 ======================================== */
 
-/* ===================================== 
+/* =====================================
    Tablet
 ======================================== */
 
@@ -272,9 +272,9 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Desktop
-   Hover styles on desktop 
+   Hover styles on desktop
 ======================================== */
 
 @media (min-width: 1024px) {
@@ -285,11 +285,11 @@ header h1 {
     }
 
     .card:hover .card-text {
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 
     .btn:hover {
         background: rgba(255, 255, 255, 1);
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 }

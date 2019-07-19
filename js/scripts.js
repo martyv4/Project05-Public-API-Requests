@@ -1,29 +1,29 @@
 
 /*
-  let people = [];  
+  $(document).ready(() => {
+    https://learn.jquery.com/using-jquery-core/document-ready/
+    Definition from w3schools: A page can't be manipulated safely until the document is "ready."
+  let people = [];
     array to store Person objects created
 
-  let cursorPersonIdx = -1; 
+  let cursorPersonIdx = -1;
     store the cursorrent index of person displayed in the modal dialog (0-11) set it to -1 when no one is being displayed
     We are maintaining the cursorrent position in the array of people.
     The initial page is -1
 
-  const addClickEvent = ($elements, person, idx) => {  
+  const addClickEvent = ($elements, person, idx) => {
       Adds a click event listener to open the modal representing the current Person's card
-  
       cursorPersonIdx = idx;
-  
       .on
           https://www.w3schools.com/jquery/event_on.asp
-  
+          definition from w3schools:  "The on() method attaches one or more event handlers for the selected elements and child elements."
 */
-
 $(document).ready(() => {
 
-  let people = [];          
-  let cursorPersonIdx = -1;    
+  let people = [];
+  let cursorPersonIdx = -1;
 
-   const addClickEvent = ($elements, person, idx) => {  
+   const addClickEvent = ($elements, person, idx) => {
     $elements.on('click', () => {
         cursorPersonIdx = idx;    //set the global cursorPersonIdx to param idx
         addModalDialogToBody();   //add the modal dialog to the DOM
@@ -32,16 +32,19 @@ $(document).ready(() => {
   };
 
   /*
-    jQuery AJAX action: 
+    jQuery AJAX action:
       get JavaScript Object Notation (JSON) response from the randomuser URI for 12 people, nationality US
       (as required for searching) - if response is success, build Person, add to array and add their cards to
       the gallery
 
-    Test: console.log(json);   
-    Test: console.log(JSON.stringify(json.results, null, 4)); 
+      Create a callback function using jquery’s ajax method
+          o	So the method takes on properties itself
+          	I passed on a function
+    Test: console.log(json);
+    Test: console.log(JSON.stringify(json.results, null, 4));
           beautify the text, 4 is 4 spaces per level
 
-    $.each(json.results, (idx, result) => { 
+    $.each(json.results, (idx, result) => {
         foreach loop, idx means index, result means each object to each element in the results json array
 
     addClickEvent($cardDiv, person, idx);
@@ -58,10 +61,10 @@ $(document).ready(() => {
               const result = json.results[idx];
         }
     success: (json) => { const $galleryDiv = $("#gallery");
-        variable 'json' is the response from the URL, automatically cast as 
+        variable 'json' is the response from the URL, automatically cast as
         a JSON object.
 
-    .push 
+    .push
         puts it to the end of the array
 */
 
@@ -70,11 +73,11 @@ $(document).ready(() => {
       dataType: 'json',
       success: (json) => {
          const $galleryDiv = $("#gallery");
-         $.each(json.results, (idx, result) => {                 
+         $.each(json.results, (idx, result) => {
             const person = new Person(result.name, result.picture.medium, result.email, result.cell, result.location, result.dob.date);
             people.push(person);
             const $cardDiv = person.addCardToGallery($galleryDiv);
-            addClickEvent($cardDiv, person, idx);                 
+            addClickEvent($cardDiv, person, idx);
          });
       }
     });
@@ -115,7 +118,7 @@ $(document).ready(() => {
 
   /**
    * removeModalPanel - delete the modal panel from the DOM
-   *  
+   *
    */
   const removeModalPanel = () => {
     $(".modal").remove();
@@ -123,7 +126,7 @@ $(document).ready(() => {
 
   /**
    * drawModalPanel - append details for a person to the modal dialog
-   *  
+   *
    * @param: person - the Person object to draw the panel for
    */
   const drawModalPanel = (person) => {
@@ -138,7 +141,7 @@ $(document).ready(() => {
     }
     else
     {
-      $prevButton.show();  
+      $prevButton.show();
     }
 
     //hide NEXT button if you're on idx people.length-1 (last item)
@@ -150,7 +153,7 @@ $(document).ready(() => {
     {
       $nextButton.show();
     }
-    //Here I need to convert the plain html to JavaScript. 
+    //Here I need to convert the plain html to JavaScript.
     //modal person panel interior with strings inserted into key points
     let baseHtml = `<div class="modal">
     <button type="button" id="modal-close-btn" class="modal-close-btn"><strong>X</strong></button>
@@ -197,8 +200,8 @@ $(document).ready(() => {
      /**
      * addModalDialogToBody - append modal dialog frame to DOM
      * let baseHtml - create a string containing the html for the modal dialog
-     * 
-     *  
+     *
+     *
      */
     const addModalDialogToBody = () => {
       //modal dialog is the modal-container and a container with two buttons
@@ -210,7 +213,7 @@ $(document).ready(() => {
 
 
       const $modalElement = $(baseHtml);         //create jQuery DOM element from baseHtml string
-      $('body').append($modalElement);           //append the $modalElement to the body 
+      $('body').append($modalElement);           //append the $modalElement to the body
 
       //add click events for the PREV and NEXT buttons
       const $prevButton = $(".modal-prev");
@@ -231,7 +234,7 @@ $(document).ready(() => {
 
     /**
      * removeModalDialogFromBody - remove the entire modal dialog from the view (return to cards)
-     *  
+     *
      */
     const removeModalDialogFromBody = () => {
       $('.modal-container').remove();
