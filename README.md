@@ -33,6 +33,7 @@ Functionality:
 Additions Made:
 -- CSS
  * Start Page image added
+ * Added font and font color
  * header h1 color changed and text-shadow
  * header h3 color changed
 ```

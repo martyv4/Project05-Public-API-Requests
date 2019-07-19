@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background-image: linear-gradient(rgb(255, 255, 255), transparent 50%),
+    background-image: linear-gradient(rgb(255, 255, 255), transparent 40%),
     linear-gradient(0deg,#fff, transparent 30%), url('../images/arno-smit-keynTanTG_4-unsplash.jpg');
     background-repeat: no-repeat;
 
@@ -27,6 +27,19 @@ body {
     padding-bottom: 350px;
     */
 
+/*     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    max-height: 900px;
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 255, 255), transparent 40%),
+    linear-gradient(0deg,#fff, transparent 30%), url('../images/arno-smit-keynTanTG_4-unsplash.jpg');
+    background-size: 750px;
+    padding-bottom: 350px;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    box-shadow: 0 15px 15px 20px -120px rgba(19, 9, 9, 0.8); */
 }
 
 header {
@@ -41,8 +54,10 @@ header {
 header h1 {
     background-color: white;
     font-size: 1.60em;
-    color: rgba(14, 13, 13, 0.9);
+    color: rgba(139, 5, 5, 0.9);
     margin-top: 35px;
+    font-size: 1.5em;
+    font-family: serif;
     text-shadow: 0 1px 0 #ccc,
                     0 2px 0 #c9c9c9,
                     0 3px 0 #bbb,
@@ -125,6 +140,8 @@ header h1 {
 
 .card-info-container {
     text-align: left;
+    font-size: 0.9em;
+    color: rgba(76, 18, 235, 0.7);
 }
 
 .card-name {
@@ -133,7 +150,7 @@ header h1 {
 
 .card-text {
     font-size: 0.9em;
-    color: rgba(50, 50, 50, 0.7);
+    color: rgba(32, 6, 6, 0.7);
     margin: 7px auto;
     transition: .4s ease-out;
 }
