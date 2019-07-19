@@ -1,4 +1,4 @@
-# Project-5-Publie-API-Requests
+# Project-5-Public-API-Requests
  Project05
 
 ## Awesome Startup Employee Directory
