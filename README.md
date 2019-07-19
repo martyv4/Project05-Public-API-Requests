@@ -28,7 +28,7 @@ Several additions were made to the original code base made avaialble for produci
 Functionality:
  * View the start up page with person's contact information
  * Modal button added to present person's contact information
- * Next and previous buttons added to scroll to person's information
+ * Next and previous buttons added to scroll through person's information
  * Search button added to search for person
 Additions Made:
 -- CSS
