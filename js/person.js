@@ -121,7 +121,7 @@ class Person {
           $cardNameCapHeader.attr('class', 'card-name cap');
           $cardNameCapHeader.text(this.name);
 
-//          this.addModalClickOpenerToElement($cardNameCapHeader);
+          //this.addModalClickOpenerToElement($cardNameCapHeader);
 
           //contains the email of the Person
           const $cardEmailParaHeader =  $("<p></p>");
