@@ -14,9 +14,18 @@ html, body {
 }
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif; 
     text-align: center;
-    background: rgba(235, 33, 33, 0.246); url(../ arno-smit-keynTanTG_4-unsplash.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), transparent 50%),
+    linear-gradient(0deg,#fff, transparent 30%), url('../images/arno-smit-keynTanTG_4-unsplash.jpg');
+    background-repeat: no-repeat;
+ 
+    /*background-blend-mode: lighten;
+    box-shadow: 0 15px 15px 20px -120px rgba(19, 9, 9, 0.8);*/
+     /*background: rgba(235, 33, 33, 0.246); url(../ arno-smit-keynTanTG_4-unsplash.jpg);
+       background-size: 750px;
+    padding-bottom: 350px;
+    */
    
 }
 
@@ -30,8 +39,9 @@ header {
 }
 
 header h1 {
-    font-size: 1.25em;
-    color: rgba(245, 244, 244, 0.9);
+    background-color: white;
+    font-size: 1.60em;
+    color: rgba(14, 13, 13, 0.9);
     margin-top: 35px;
     text-shadow: 0 1px 0 #ccc,
                     0 2px 0 #c9c9c9,
@@ -175,14 +185,20 @@ header h1 {
     width: 150px;
     margin-top: 35px;
     border-radius: 50%;
+    
 }
 
 .modal-name {
     margin-bottom: 5px;
+    font-size: 1.5em;
+    font-family: serif; 
+    color: rgba(80, 7, 7, 0.7);
 }
 
 .modal-text {
-    color: rgba(50, 50, 50, 0.7);
+    font-family: serif; 
+    font-size: 1.2em;
+    color: rgba(29, 4, 4, 0.7);
     margin: 10px;
 }
 
@@ -201,7 +217,10 @@ header h1 {
     max-width: 420px;
     padding: 10px 15px 15px;;
     margin: 10px auto auto;
-    background: rgb(238, 166, 166);
+    background-image: linear-gradient(rgb(252, 244, 244), transparent 50%),
+    linear-gradient(0deg,#fff, transparent 10%), url('../images/arno-smit-keynTanTG_4-unsplash.jpg');
+    background-repeat: no-repeat;
+    /*background: rgb(238, 166, 166);*/
     border-radius: 0.25em;
     border: 1px solid rgba(100, 100, 100, 0.3);
 }
