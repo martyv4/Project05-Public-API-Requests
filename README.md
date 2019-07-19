@@ -32,38 +32,9 @@ Functionality:
  * Search button added to search for person
 Additions Made:
 -- CSS
- * Start Button color change
- * Start Button style changes: transition and :hover changes
--- Other Media
- * Header title font changed to shadow
- * Background image added
-```
-#### Game Screen
-```
-Functionality:
- * Game title header text
- * Game board - clickable letters
- * Game board - phrase display (all letters begin hidden)
- * Game board - life counter (five hearts)
- * Event listener for keyboard keypresses [alphabetic characters only]
-Additions Made:
--- CSS
- * Keyboard Button color change
- * Keyboard Button style changes: transition and :hover changes
- * Background color and game board phrase changes
- * When the player has one heart left, it will fade and re-appear in loop
--- Other Media
- * Added sounds for correct and incorrect letter guesses
- * Added background image
-```
-#### Win Screen:
-```
-Functionality:
- * Display 'win' message to the player
- * Provide Start Button to begin a new game
-Additions Made:
--- CSS
  * Start Page image added
  * header h1 color changed and text-shadow
  * header h3 color changed
- ```
+ * Start Button color change
+ * Start Button style changes: transition and :hover changes
+```
